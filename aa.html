@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Portfolio</title>
+    <!-- Unicons and icons as well as css -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="stylesheet" href="style.css">
+<link rel="shortcut icon" type="image" href="testimonial3.jpg">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+<!-- JAVASCRIPT -->
+</head>
+<body>
+    <!-- HEADER -->
+    <header class="header" id="header">
+
+        <nav class="nav container">
+            <a href="#" class="nav_logo">FCC</a>
+            <div class="nav_menu" id="nav-menu">
+                <ul class="nav_list grid"> 
+                    <li class="nav_item">
+                        <a href="#" class="nav_link"></a>
+                    </li>
+                    <li class="nav_item">
+                        <a href="#home" class="nav_link">
+                        <i class="uil uil-house-user nav_icon"></i>HOME</a>
+                    </li>
+                    <li class="nav_item">
+                        <a href="#about" class="nav_link">
+                            <i class="uil uil-user nav_icon"></i>ABOUT
+                        </a>
+                    </li>
+                    <li class="nav_item">
+                        <a href="#skills" class="nav_link" id="upper">
+                            <i class="fad fa-file-code nav_icon"></i>SKILLS
+                        </a>
+                    </li>
+                    <li class="nav_item" >
+                        <a href="#services" class="nav_link">
+                            <i class="fad fa-briefcase nav_icon"></i>SERVICES
+                        </a>
+                    </li>
+                    <li class="nav_item">
+                        <a href="#Portfolio" class="nav_link">
+                            <i class="fal fa-portrait nav_icon"></i>PORTFOLIO
+                        </a>
+                    </li>
+                    <li class="nav_item">
+                        <a href="#contactme" class="nav_link" id="another">
+                            <i class="fal fa-id-card-alt nav_icon"></i>CONTACT ME
+
+                        </a>
+                    </li>
+                </ul>
+                <div class="close">
+                <i class="uil uil-multiply nav_close" id="nav-close" onclick="toggleclose()"> </i> </div>
+            </div>
+            <div class="nav_btns">
+            <div class="nav_toggle" id="nav-toggle" onclick="togglenav()">
+                <i class="uil uil-apps"></i>
+            </div>
+        </div>
+        </nav>
+    </header>
+    <!-- MAIN JS -->
+    <script src="main.js"></script>
+    <script>
+
+function togglenav(){
+    document.getElementById("nav-menu").classList.toggle("show-menu")
+}
+function toggleclose(){
+        document.getElementById("nav-menu").classList.remove("show-menu")
+
+}
+    </script>
+
+</body>
+
+</html>
